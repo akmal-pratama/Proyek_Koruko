@@ -201,7 +201,7 @@ if (isset($_SESSION["username"])) {
             transition: all 0.3s;
         }
 
-        .profil-admin{
+        .profil-admin {
             width: 20px;
             height: 20px;
             border-radius: 50%;
@@ -243,12 +243,14 @@ if (isset($_SESSION["username"])) {
                     </li>
 
                     <!-- Signed In User-->
-                <?php elseif (($_SESSION["login"] == true) && $user != $nama_admin): ?>
+                <?php endif; ?>
+                <?php if (($_SESSION["login"] == true) && $user != $nama_admin): ?>
                     <li class="<?php echo ($current_page == 'kelola') ? 'navbar-item-current' : 'navbar-item'; ?>">
                         <a href="kelola.php" class="navbar-link">Kelola</a>
 
-                        <!-- Signed In Admin-->
-                    <?php elseif (($_SESSION["login"] == true) && $user == $nama_admin): ?>
+                    <?php endif; ?>
+                    <!-- Signed In Admin-->
+                    <?php if (($_SESSION["login"] == true) && $user == $nama_admin): ?>
                     <li class="<?php echo ($current_page == 'admin_properti' || $current_page == 'admin_verif') ? 'navbar-item-current' : 'navbar-item'; ?>">
                         <a href="admin_properti.php" class="navbar-link">Properti</a>
                     </li>
@@ -262,8 +264,6 @@ if (isset($_SESSION["username"])) {
                         <a href="admin_pengaturan.php" class="navbar-link">Pengaturan</a>
                     </li>
                 <?php endif; ?>
-
-
             </ul>
             <ul class="navbar-right">
                 <!-- Signed Out -->

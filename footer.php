@@ -135,12 +135,12 @@
                 <div class="link-section">
                     <div class="footer-title">Link Cepat</div>
                     <ul class="link-list">
-                        <li><a href="beranda">Beranda</a></li>
-                        <li><a href="jelajah">Jelajah</a></li>
-                        <li><a href="tentang">Tentang</a></li>
-                        <li><a href="daftar">Daftar</a></li>
-                        <li><a href="kelola">Kelola</a></li>
-                        <li><a href="masuk">Masuk</a></li>
+                        <li><a href="index.php">Beranda</a></li>
+                        <li><a href="pencarian.php">Cari</a></li>
+                        <li><a href="tentang.php">Tentang</a></li>
+                        <li><a href="daftar.php">Daftar</a></li>
+                        <li><a href="kelola.php">Kelola</a></li>
+                        <li><a href="masuk.php">Masuk</a></li>
                     </ul>
                 </div>
             </div>
